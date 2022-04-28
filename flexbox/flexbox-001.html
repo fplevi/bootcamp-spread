@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Funcamentos - Flexbox</title>
+    <style>
+        .flex-container {
+            display: flex;
+            max-width: 700px;
+            max-height: 500px;
+            border: 1px solid black;
+        }
+
+        .row-reverse {
+            flex-flow: row-reverse wrap;
+        }
+
+        .column-reverse {
+            flex-flow: column-reverse wrap;
+        }
+
+        .item {
+            width: 200px;
+            height: 200px;
+            text-align: center;
+            line-height: 200px;
+            margin: 5px;
+            font-size: 30px;
+            color: white;
+        }
+
+        .green {
+            background-color: green;
+        }
+
+        .blue {
+            background-color: blue;
+        }
+
+        .purple {
+            background-color: purple;
+        }
+
+        .orange {
+            background-color: orange;
+        }
+        
+        .red {
+            background-color: red;
+        }
+    </style>
+</head>
+<body>
+    <h1>row</h1>
+    <main class="flex-container">
+        <div class="item green">1</div>
+        <div class="item blue">2</div>
+        <div class="item purple">3</div>
+        <div class="item orange">4</div>
+        <div class="item red">5</div>
+    </main>
+
+    <h1>row-reverse</h1>
+    <main class="flex-container row-reverse">
+        <div class="item green">1</div>
+        <div class="item blue">2</div>
+        <div class="item purple">3</div>
+        <div class="item orange">4</div>
+        <div class="item red">5</div>
+    </main>
+
+    <h1>row-reverse</h1>
+    <main class="flex-container column-reverse">
+        <div class="item green">1</div>
+        <div class="item blue">2</div>
+        <div class="item purple">3</div>
+        <div class="item orange">4</div>
+        <div class="item red">5</div>
+    </main>
+</body>
+</html>

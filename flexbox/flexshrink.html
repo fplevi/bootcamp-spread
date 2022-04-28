@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Funcamentos - Flex Shrink</title>
+    <style>
+        .container {
+            max-width: 1000px;
+            margin: auto;
+            display: flex;
+            padding: 1%;
+            border: 1px solid black;
+        }
+        .item {
+            background-color: orange;
+            margin: 1%;
+            color: white;
+            text-align: center;
+        }
+        .w100 {
+            flex-basis: 100px;
+        }
+        .fs-0 {
+            flex-shrink: 0;
+        }
+        .fs-1 {
+            flex-shrink: 1;
+        }
+        .fs-2 {
+            flex-shrink: 2;
+        }
+        .fg-0 {
+            flex-grow: 0;
+        }
+        .fg-1 {
+            flex-grow: 1;
+        }
+        .fg-2 {
+            flex-grow: 2;
+        }
+        
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="item fs-1 fg-2">1</div>
+        <div class="item fs-1 fg-2">2AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA</div>
+        <div class="item fs-1 fg-1 w100">3</div>
+        <div class="item fs-1 fg-2">4</div>
+        <div class="item fs-1 fg-2">5</div>
+    </div>
+</body>
+</html>
