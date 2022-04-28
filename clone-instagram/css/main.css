@@ -1,0 +1,115 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+:root {
+    --cor01:#0095f6;
+    --cor02:#f3f3f3;
+    --cor03:#8e8e8e;
+    --font-padrao:'Roboto', sans-serif;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: content-box;
+}
+
+body {
+    font-family: var(--font-padrao);
+    background-color: var(--cor02);
+}
+
+.instagram-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 953px;
+    margin: 50px auto 0;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.instagram-celular {
+    flex: 1;
+    background:  url("../imgs/celular00.png") no-repeat center;
+    height: 100%;
+    min-height: 635px;
+    width: 100%;
+    min-width: 465px;
+    position: relative;
+}
+
+.screen-celular {
+    position: absolute;
+    top:30px;
+    left: 230px;
+}
+
+.instagram-group {
+    flex: 1;
+    max-width: 300px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: white;
+    border: 0.5px solid #CCC;
+    border-radius: 3px;
+}
+
+.instagram-logo {
+    margin-bottom: 20px;
+}
+
+.foto-perfil {
+    border-radius: 50%;
+    margin-bottom: 20px;
+}
+
+.btn-primary {
+    width: 250px;
+    height: 30px;
+    line-height: 30px;
+    color: white;
+    text-decoration: none;
+    font-weight: 500;
+    text-align: center;
+    background-color: var(--cor01);
+    margin-bottom: 20px;
+    border-radius: 3px;
+}
+
+.troca-conta {
+    color: var(--cor01);
+    font-weight: 500;
+    text-decoration: none;
+}
+
+.nav-footer {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    text-align: center;
+    flex-direction: column;
+    margin-bottom: 10px;
+}
+
+.line-1, .line-2 {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 10px;
+}
+
+.nav-footer a{
+    font-size: 0.85em;
+    text-decoration: none;
+    color: var(--cor03);
+    text-align: center;
+}
+
+.creditos {
+    display: flex;
+    font-size: .85em;
+    justify-content: space-between;
+    color: var(--cor03);
+    width: 50%;
+}
