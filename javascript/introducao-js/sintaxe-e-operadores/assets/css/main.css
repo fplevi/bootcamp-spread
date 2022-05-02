@@ -1,0 +1,21 @@
+body {
+    min-height: 100vh;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    flex-direction: column;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+form {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 20%;
+    margin: 0 auto;
+}
+
+input, button {
+    margin-bottom: 15px;
+}
